@@ -52,7 +52,7 @@
   margin-top: 7rem;
   text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
   line-height: 1.2;
-  width: 70vw;
+  width: 95vw;
   margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(20px);
@@ -63,13 +63,14 @@
   font-size: 2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
-  width: 80vw;
+  width: 95vw;
 
   /* fade-in suave */
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.6s ease 0.2s;
 }
+
 
 .hero h1.visible,
 .hero .subtitle.visible {
@@ -87,7 +88,6 @@
   .hero h1 { font-size:2.6rem; }
   .hero .subtitle { font-size:2rem; }
 }
-
 @media screen and (max-width:600px){
   .hero h1{
     font-size: 2.2rem;
