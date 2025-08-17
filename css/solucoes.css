@@ -1,0 +1,26 @@
+/* SOLUÇÕES SECTION */
+#solucoes {
+  background: linear-gradient(135deg, rgba(32, 178, 170, 0.1), rgba(255, 255, 255, 1));
+}
+
+.investimentos {
+  text-align: center;
+  background: linear-gradient(135deg, var(--verde-agua), var(--azul-oceano));
+  color: var(--branco-espuma);
+  padding: 3rem;
+  border-radius: 20px;
+  margin: 3rem 0;
+  box-shadow: 0 15px 35px rgba(32, 178, 170, 0.3);
+}
+
+.investimentos .big-number {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .investimentos .big-number {
+    font-size: 3rem;
+  }
+}

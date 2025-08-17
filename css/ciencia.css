@@ -1,0 +1,31 @@
+/* CIÊNCIA SECTION */
+#ciencia {
+  background: linear-gradient(135deg, rgba(32, 178, 170, 0.1), rgba(255, 255, 255, 1));
+}
+
+.geo-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.geo-feature {
+  background: linear-gradient(135deg, var(--azul-oceano), var(--azul-claro));
+  color: var(--branco-espuma);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.geo-feature:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 119, 190, 0.3);
+}
+
+@media (max-width: 768px) {
+  .geo-features {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,32 @@
+/* ICAPUÍ SECTION */
+#icapui {
+  background: linear-gradient(135deg, rgba(135, 206, 235, 0.1), rgba(244, 208, 63, 0.05));
+}
+
+.distritos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.distrito {
+  background: linear-gradient(135deg, var(--verde-agua), var(--azul-claro));
+  color: var(--branco-espuma);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}
+
+.distrito:hover {
+  transform: scale(1);
+  box-shadow: 0 15px 35px rgba(32, 178, 170, 0.3);
+}
+
+@media (max-width: 768px) {
+  .distritos {
+    grid-template-columns: 1fr;
+  }
+}

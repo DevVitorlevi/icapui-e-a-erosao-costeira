@@ -1,0 +1,32 @@
+/* CONCLUSÕES SECTION */
+#conclusoes {
+  background: linear-gradient(135deg, var(--azul-oceano), var(--azul-claro));
+  color: var(--branco-espuma);
+  height: 65vh;
+}
+
+.conclusoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+.conclusao-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.conclusao-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .conclusoes-grid {
+    grid-template-columns: 1fr;
+  }
+}
