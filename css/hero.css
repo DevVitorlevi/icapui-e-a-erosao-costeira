@@ -49,6 +49,7 @@
 .hero h1 {
   font-size: 4rem;
   font-weight: bold;
+  margin-top: 7rem;
   text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
   line-height: 1.2;
   width: 70vw;
@@ -75,7 +76,11 @@
   opacity: 1;
   transform: translateY(0);
 }
-
+@media (max-width:992px){
+  .hero { background-attachment: scroll; }
+  .hero h1 { font-size:2.6rem; }
+  .hero .subtitle { font-size:2rem; }
+}
 /* Responsividade */
 @media (max-width:768px){
   .hero { background-attachment: scroll; }
