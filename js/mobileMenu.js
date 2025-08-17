@@ -42,14 +42,4 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
     });
   });
-
-  // Close menu when scrolling (optional)
-  window.addEventListener("scroll", function () {
-    if (navLinks.classList.contains("active")) {
-      navLinks.classList.remove("active");
-      overlay.classList.remove("active");
-      body.style.overflow = "";
-      mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-    }
-  });
 });

@@ -1,0 +1,75 @@
+/* ============================
+   🎬 ANIMAÇÕES DO SITE
+   ============================ */
+
+/* 🔹 Textos (H1/H2/H3) - fade-up mais perceptível */
+h1, h2, h3 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+h1.visible, h2.visible, h3.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🔹 Cards das grids - vertical suave */
+.cards-grid .card {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.8s ease;
+}
+
+.cards-grid .card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🔹 Timeline - mais lenta (1s a 1.2s) */
+.timeline-item {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 1s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 🔹 Imagens - efeito zoom suave */
+.section-image {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.8s ease;
+}
+
+.section-image.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 🔹 Dados Chave */
+.stats-grid .stat-item {
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: all 0.8s ease;
+}
+
+.stats-grid .stat-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 🔹 Atividades Turismo */
+.atividades .atividade {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.6s ease;
+}
+
+.atividades .atividade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -2,7 +2,12 @@
 #ciencia {
   background: linear-gradient(135deg, rgba(32, 178, 170, 0.1), rgba(255, 255, 255, 1));
 }
-
+#ciencia p{
+  font-size: 1.6rem;
+}
+#ciencia h3{
+  font-size: 2rem;
+}
 .geo-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -28,4 +33,12 @@
   .geo-features {
     grid-template-columns: 1fr;
   }
+}
+@media screen and (max-width:600px){
+  #ciencia p{
+  font-size: 1.2rem;
+}
+#ciencia h3{
+  font-size: 1.6rem;
+}
 }

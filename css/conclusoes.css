@@ -2,7 +2,13 @@
 #conclusoes {
   background: linear-gradient(135deg, var(--azul-oceano), var(--azul-claro));
   color: var(--branco-espuma);
-  height: 65vh;
+  padding-top: 8rem;
+}
+#conclusoes p{
+  font-size: 1.2rem;
+}
+#conclusoes h3{
+  font-size: 1.6rem;
 }
 
 .conclusoes-grid {

@@ -2,6 +2,12 @@
 #solucoes {
   background: linear-gradient(135deg, rgba(32, 178, 170, 0.1), rgba(255, 255, 255, 1));
 }
+#solucoes p{
+  font-size: 1.4rem;
+}
+#solucoes h3{
+  font-size: 2rem;
+}
 
 .investimentos {
   text-align: center;
@@ -23,4 +29,18 @@
   .investimentos .big-number {
     font-size: 3rem;
   }
+}
+@media screen and (max-width:600px){
+  #solucoes p{
+  font-size: 1.2rem;
+}
+#solucoes h3{
+  font-size: 1.6rem;
+}
+#solucoes h2{
+  font-size: 1.6rem;
+}
+.investimentos .big-number{
+  font-size: 2rem;
+}
 }

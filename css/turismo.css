@@ -2,6 +2,9 @@
 #turismo {
   background: linear-gradient(135deg, rgba(244, 208, 63, 0.1), rgba(255, 255, 255, 1));
 }
+#turismo p{
+  font-size: 1.6rem;
+}
 
 .atividades {
   display: grid;
@@ -14,11 +17,16 @@
   background: var(--areia-dourada);
   color: var(--branco-espuma);
   padding: 1.5rem;
-  border-radius: 50px;
+  border-radius: 10px;
   text-align: center;
   font-weight: bold;
   transition: all 0.3s ease;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .atividade:hover {
@@ -29,5 +37,20 @@
 @media (max-width: 768px) {
   .atividades {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: .3rem;
   }
+  .atividade{
+    padding: .7rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width:600px){
+  #turismo p{
+  font-size: 1.2rem;
+}
+#turismo h3{
+  font-size: 1.6rem;
+}
 }

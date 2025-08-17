@@ -1,4 +1,6 @@
-/* HEADER & NAVEGAÇÃO ATUALIZADO - COM NAV CENTRALIZADA */
+/* ================================
+   HEADER & NAVEGAÇÃO - ATUALIZADO
+   ================================ */
 header {
   position: fixed;
   top: 0;
@@ -8,10 +10,7 @@ header {
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: 2rem;
 }
 
 .header-scrolled {
@@ -21,13 +20,13 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
   position: relative;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
-
 
 .nav-container {
   display: flex;
@@ -50,13 +49,12 @@ nav {
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 1rem;
-  border-radius: 8px; 
+  border-radius: 8px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1.5rem;
 }
-
 
 .nav-links a i {
   font-size: 1.5rem;
@@ -85,8 +83,15 @@ nav {
   width: 80%;
 }
 
+/* ===========================
+   BOTÃO MOBILE MENU
+   =========================== */
 .mobile-menu {
-  display: none;
+  display: none; /* escondido por padrão */
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
   background: none;
   border: none;
   color: var(--branco-espuma);
@@ -94,15 +99,30 @@ nav {
   cursor: pointer;
   z-index: 1001;
   transition: all 0.3s ease;
-  flex: 1;
-  justify-content: flex-end;
 }
 
 .mobile-menu:hover {
-  transform: scale(1.1);
+  transform: translateY(-50%) scale(1.1);
 }
 
-/* Overlay e menu mobile */
+/* ===========================
+   EXIBIR BOTÃO APENAS EM TELAS PEQUENAS ATÉ 1020px
+   =========================== */
+@media (max-width: 1020px) {
+  .mobile-menu {
+    display: flex; /* aparece no mobile */
+  }
+}
+
+@media (min-width: 1021px) {
+  .mobile-menu {
+    display: none; /* desaparece em telas grandes */
+  }
+}
+
+/* ===========================
+   OVERLAY MENU MOBILE
+   =========================== */
 .mobile-overlay {
   position: fixed;
   top: 0;
@@ -121,11 +141,14 @@ nav {
   visibility: visible;
 }
 
-@media (max-width: 768px) {
+/* ===========================
+   MENU MOBILE RESPONSIVO ATÉ 1020px
+   =========================== */
+@media (max-width: 1020px) {
   .nav-container {
     display: none;
   }
-  
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -157,11 +180,7 @@ nav {
     font-size: 1.2rem;
   }
 
-  .mobile-menu {
-    display: flex;
-  }
-
-  /* Animação para os links do menu mobile */
+  /* Animação dos links */
   .nav-links li {
     opacity: 0;
     transform: translateX(20px);
@@ -182,11 +201,14 @@ nav {
   .nav-links.active li:nth-child(7) { transition-delay: 0.4s; }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+/* ===========================
+   AJUSTES INTERMEDIÁRIOS
+   =========================== */
+@media (min-width: 1021px) and (max-width: 1200px) {
   .nav-links {
     gap: 1rem;
   }
-  
+
   .nav-links a {
     padding: 0.5rem 0.8rem;
     font-size: 0.95rem;

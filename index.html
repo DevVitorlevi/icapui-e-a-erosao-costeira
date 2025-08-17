@@ -20,13 +20,15 @@
   <link href="css/solucoes.css" rel="stylesheet">
   <link href="css/conclusoes.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animations.css">
   <link href="css/utilidades.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Loading Screen -->
-  <div class="loading">
-    <div class="wave-loading"></div>
-  </div>
+
+
+
+
+
 
   <!-- Header -->
   <header id="header">
@@ -79,56 +81,53 @@
   <section id="hero" class="hero">
     <div class="hero-content">
       <h1>OBRAS DE PROTEÇÃO COSTEIRA NO LITORAL LESTE CEARENSE</h1>
-      <p class="subtitle">
+      <h2 class="subtitle">
         Conhecimento etno-costeiro, implicações e medidas mitigadoras para erosão e finalidades turísticas
-      </p>
-    </div>
-    <div class="scroll-indicator" onclick="scrollToSection('dados-chave')">
-      <i class="fas fa-chevron-down"></i>
-      <p>Role para explorar</p>
+      </h2>
     </div>
   </section>
 
-  <!-- Nova Seção de Dados Chave -->
-  <section id="dados-chave" class="dados-chave">
-    <div class="container">
-      <h2 class="section-title">
-        <i class="fas fa-chart-bar"></i>
-        Dados Chave
-      </h2>
-      
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-icon">
-            <i class="fas fa-ruler-combined"></i>
-          </div>
-          <div class="stat-number">64</div>
-          <div class="stat-label">km de Costa</div>
+ <!-- Nova Seção de Dados Chave -->
+<section id="dados-chave" class="dados-chave">
+  <div class="container">
+    <h2 class="section-title">
+      <i class="fas fa-chart-bar"></i>
+      Dados Chave
+    </h2>
+    
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-ruler-combined"></i>
         </div>
-        <div class="stat-item">
-          <div class="stat-icon">
-            <i class="fas fa-umbrella-beach"></i>
-          </div>
-          <div class="stat-number">14</div>
-          <div class="stat-label">Praias</div>
+        <div class="stat-number">64</div>
+        <div class="stat-label">km de Costa</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-umbrella-beach"></i>
         </div>
-        <div class="stat-item">
-          <div class="stat-icon">
-            <i class="fas fa-money-bill-wave"></i>
-          </div>
-          <div class="stat-number">R$ 16M</div>
-          <div class="stat-label">Investido</div>
+        <div class="stat-number">14</div>
+        <div class="stat-label">Praias</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-money-bill-wave"></i>
         </div>
-        <div class="stat-item">
-          <div class="stat-icon">
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <div class="stat-number">2000</div>
-          <div class="stat-label">Início dos Problemas</div>
+        <div class="stat-number">R$ 16M</div>
+        <div class="stat-label">Investido</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-calendar-alt"></i>
         </div>
+        <div class="stat-number">2000</div>
+        <div class="stat-label">Início dos Problemas</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Conheça Icapuí -->
   <section id="icapui">
@@ -190,7 +189,7 @@
           <div class="card-icon">
             <i class="fas fa-home" style="color: var(--coral-alaranjado)"></i>
           </div>
-          <h3>Impacto na População</h3>
+          <h3 class="e-title">Impacto na População</h3>
           <p>
             A erosão passou a ser um problema quando começou a afetar diretamente a população, causando danos às estruturas 
             construídas nas proximidades do litoral e resultando em perdas econômicas para o município.
@@ -201,7 +200,7 @@
           <div class="card-icon">
             <i class="fas fa-calendar" style="color: var(--coral-alaranjado)"></i>
           </div>
-          <h3>Cronologia</h3>
+          <h3 class="e-title">Cronologia</h3>
           <p>
             As primeiras preocupações surgiram no início dos anos 2000, com notícias mais frequentes a partir de 2011, 
             quando foram relatados diversos danos às residências devido à ação direta das marés.
@@ -212,7 +211,7 @@
           <div class="card-icon">
             <i class="fas fa-wave-square" style="color: var(--coral-alaranjado)"></i>
           </div>
-          <h3>Processo Natural</h3>
+          <h3 class="e-title">Processo Natural</h3>
           <p>
             A erosão costeira é um processo inerente à dinâmica costeira, ligado ao equilíbrio do ambiente praial, 
             influenciado por fatores climáticos, oceanográficos globais, locais e interferências humanas.
@@ -221,7 +220,7 @@
       </div>
 
       <div class="image-container">
-        <img src="media/image1.jpeg" alt="Avanço do mar em Icapuí" class="section-image">
+        <img src="image/image1.jpeg" alt="Avanço do mar em Icapuí" class="section-image">
         <p class="image-caption">Avanço do mar destrói casas e ameaça praias paradisíacas de Icapuí, no Ceará. Fonte: Acervo da Pesquisa (2018)</p>
       </div>
 
@@ -273,7 +272,7 @@
       </div>
 
       <div class="image-container">
-        <img src="media/image2.jpeg" alt="Enrocamento em Icapuí" class="section-image">
+        <img src="image/image2.jpeg" alt="Enrocamento em Icapuí" class="section-image">
         <p class="image-caption">Enrocamento da Praia de Barrinha e trecho da Praia de Barreiras. Fonte: Acervo da Pesquisa (2024)</p>
       </div>
     </div>
@@ -311,7 +310,7 @@
       </div>
 
       <div class="image-container">
-        <img src="media/image3.jpg" alt="Unidades Geoambientais de Icapuí" class="section-image">
+        <img src="image/image3.jpg" alt="Unidades Geoambientais de Icapuí" class="section-image">
         <p class="image-caption">Unidades Geoambientais da Planície Litorânea de Icapuí. Fonte: Adaptado de frames retirados de imagens obtidas com drone, Prefeitura Municipal de Icapuí. Lacerda (2018)</p>
       </div>
     </div>
@@ -340,23 +339,8 @@
       </div>
 
       <div class="image-container">
-        <img src="media/image4.jpeg" alt="Kitesurf em Requenguela" class="section-image">
+        <img src="image/image4.jpeg" alt="Kitesurf em Requenguela" class="section-image">
         <p class="image-caption">Interação de Kitesurf com banhistas na Praia de Requenguela. Fonte: Acervo de André Luiz Braga Silva - Pesquisa de Doutorado (2024)</p>
-      </div>
-
-      <div class="cards-grid" style="margin-top: 3rem;">
-        <div class="card">
-          <h3>Valor do Espaço</h3>
-          <p>
-            Refere-se aos recursos naturais existentes em determinado lugar, como as praias, falésias e ecossistemas costeiros.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Valor no Espaço</h3>
-          <p>
-            Refere-se ao valor agregado referente à valorização econômica gerada pelo turismo e infraestrutura desenvolvida.
-          </p>
-        </div>
       </div>
     </div>
   </section>
@@ -399,10 +383,10 @@
   <!-- Conclusões -->
   <section id="conclusoes">
     <div class="container">
-      <h2 class="section-title" style="color: white;">
+      <h1 class="section-title" style="color: white;">
         <i class="fas fa-lightbulb"></i>
         Conclusões
-      </h2>
+      </h1>
 
       <div class="conclusoes-grid">
         <div class="conclusao-card">
@@ -460,7 +444,6 @@
   </button>
 
   <!-- Scripts -->
-  <script src="js/loading.js"></script>
   <script src="js/itensnav.js"></script>
   <script src="js/mobileMenu.js"></script>
   <script src="js/smoothScroll.js"></script>

@@ -2,7 +2,9 @@
 #icapui {
   background: linear-gradient(135deg, rgba(135, 206, 235, 0.1), rgba(244, 208, 63, 0.05));
 }
-
+#icapui h3{
+  font-size: 2rem;
+}
 .distritos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -29,4 +31,15 @@
   .distritos {
     grid-template-columns: 1fr;
   }
+  #icapui h3{
+  font-size: 2rem;
+}
+}
+@media (min-width: 1024px) {
+  .distritos {
+    grid-template-columns: 1fr;
+  }
+#icapui a{
+  font-size: 1.3rem;
+}
 }

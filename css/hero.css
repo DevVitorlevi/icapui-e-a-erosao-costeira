@@ -1,34 +1,24 @@
-/* HERO SECTION - VERSÃO FINAL COM CONTEÚDO CENTRALIZADO */
+/* HERO SECTION - VERSÃO FINAL OTIMIZADA */
 .hero {
   height: 100vh;
-  min-height: -webkit-fill-available; /* Para mobile browsers */
   background:
     linear-gradient(rgba(0, 119, 190, 0.3), rgba(135, 206, 235, 0.3)),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800"><defs><linearGradient id="ocean" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%2387ceeb;stop-opacity:1" /><stop offset="100%" style="stop-color:%230077be;stop-opacity:1" /></linearGradient></defs><rect width="1000" height="800" fill="url(%23ocean)"/><path d="M0,400 Q250,350 500,400 T1000,400 L1000,800 L0,800 Z" fill="%23f4d03f" opacity="0.3"/></svg>');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 
   display: flex;
-  flex-direction: column;     /* conteúdo + indicador em coluna */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
   overflow: hidden;
-
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Correção para mobile Safari */
-@supports (-webkit-touch-callout: none) {
-  .hero {
-    height: -webkit-fill-available;
-  }
-}
-
-/* Onda decorativa */
+/* Wave decorativa */
 .hero::before {
   content: '';
   position: absolute;
@@ -37,6 +27,7 @@
   right: 0;
   bottom: 0;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><path d="M0,100 Q250,50 500,100 T1000,100 L1000,200 L0,200 Z" fill="%23ffffff" opacity="0.1"/></svg>');
+  z-index: 1;
   animation: wave 6s ease-in-out infinite;
 }
 
@@ -47,87 +38,62 @@
   max-width: 800px;
   width: 100%;
   padding: 0 20px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* centraliza horizontal */
-  justify-content: center; /* centraliza vertical */
-  min-height: 100%;        /* ocupa a altura do hero */
-}
-
-/* Título principal */
-.hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  animation: slideInUp 1s ease-out;
-  line-height: 1.2;
-}
-
-/* Subtítulo */
-.hero .subtitle {
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  animation: slideInUp 1s ease-out 0.3s both;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  max-width: 600px;
-}
-
-/* Indicador de scroll */
-.scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--branco-espuma);
-  animation: bounce 2s infinite;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  min-height: 100%;
 }
 
-.scroll-indicator i {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+/* Título H1 centralizado - usa apenas scroll fade-up */
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 8rem;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  line-height: 1.2;
+  width: 70vw;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+/* Subtitle */
+.hero .subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  width: 80vw;
+
+  /* fade-in suave */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease 0.2s;
 }
 
-.scroll-indicator p {
-  font-size: 1rem;
-  margin: 0;
+.hero h1.visible,
+.hero .subtitle.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-  .hero {
-    background-attachment: scroll; /* remove parallax em mobile */
-  }
+@media (max-width:768px){
+  .hero { background-attachment: scroll; }
+  .hero h1 { font-size:2.8rem; }
+  .hero .subtitle { font-size:2rem; }
+}
 
-  .hero h1 {
+@media screen and (max-width:600px){
+  .hero h1{
     font-size: 2.2rem;
   }
-
-  .hero .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .scroll-indicator i {
-    font-size: 1.5rem;
-  }
-
-  .scroll-indicator p {
-    font-size: 0.9rem;
+  .hero .subtitle{
+    font-size: 1.4rem;
   }
 }
 
-/* Garante que o hero não seja menor que o conteúdo */
-@media (max-height: 600px) {
-  .hero {
-    min-height: 600px;
-    height: auto;
-    padding: 4rem 0;
-  }
+@media screen and (max-height:600px){
+  .hero { min-height:600px; height:auto; padding:4rem 0; }
+
 }
