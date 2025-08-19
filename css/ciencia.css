@@ -2,10 +2,10 @@
 #ciencia {
   background: linear-gradient(135deg, rgba(32, 178, 170, 0.1), rgba(255, 255, 255, 1));
 }
-#ciencia p{
+#ciencia p {
   font-size: 1.6rem;
 }
-#ciencia h3{
+#ciencia h3 {
   font-size: 2rem;
 }
 .geo-features {
@@ -34,11 +34,201 @@
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width:600px){
-  #ciencia p{
-  font-size: 1.2rem;
+
+@media screen and (max-width: 600px) {
+  #ciencia p {
+    font-size: 1.2rem;
+  }
+  #ciencia h3 {
+    font-size: 1.6rem;
+  }
 }
-#ciencia h3{
-  font-size: 1.6rem;
+
+.geo-detail-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.geo-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.geo-detail-card h3 {
+  color: #2c5aa0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.geo-detail-card p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.highlight-stat {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0.25rem;
+  font-size: 1.3rem;
+}
+
+.terracos-info {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.depositos-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.deposito-item {
+  background: #fff;
+  border-left: 4px solid #17a2b8;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.deposito-item h4 {
+  color: #17a2b8;
+  margin-bottom: 0.5rem;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border: 2px dashed #2196f3;
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.image-placeholder i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.dunas-types {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.duna-type {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border-left: 5px solid #ff9800;
+}
+
+.duna-type h4 {
+  color: #f57c00;
+  margin-bottom: 1rem;
+}
+
+.praias-setores {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+.setor-praial {
+  background: white;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.setor-praial h4 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.delta-info {
+  background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+/* NOVAS CLASSES PARA BLOCO INLINE ANTERIOR */
+.card-ecologica {
+  background: #e8f5e8;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.card-ameaca {
+  background: #fff3cd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  border-left: 4px solid #ffc107;
+}
+
+.card-legal {
+  background: #e1f5fe;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  border-left: 4px solid #2196f3;
+}
+
+.falésias-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.card-falesia-viva {
+  background: #d4edda;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #28a745;
+}
+
+.card-falesia-morta {
+  background: #f8d7da;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #dc3545;
+}
+
+@media (max-width: 768px) {
+  .geo-detail-card {
+    padding: 1.5rem;
+  }
+  .dunas-types,
+  .depositos-grid,
+  .falésias-cards {
+    grid-template-columns: 1fr;
+  }
 }

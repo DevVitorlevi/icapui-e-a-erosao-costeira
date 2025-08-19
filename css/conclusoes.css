@@ -2,7 +2,7 @@
 #conclusoes {
   background: linear-gradient(135deg, var(--azul-oceano), var(--azul-claro));
   color: var(--branco-espuma);
-  padding-top: 8rem;
+  color: black;
 }
 #conclusoes p{
   font-size: 1.2rem;
@@ -23,8 +23,11 @@
   border-radius: 15px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
   transition: all 0.3s ease;
 }
+
+
 
 .conclusao-card:hover {
   transform: translateY(-5px);
@@ -35,4 +38,16 @@
   .conclusoes-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Conclusões */
+.section-title-light {
+  color: white;
+}
+
+.card-light {
+  background: rgba(255,255,255,0.95);
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
