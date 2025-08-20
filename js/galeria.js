@@ -142,11 +142,6 @@ const images = [
     description: "Região de Icapuí - Área 42",
   },
   {
-    id: "image043",
-    title: "Erosão Costeira 6",
-    description: "Região de Icapuí - Área 43",
-  },
-  {
     id: "image044",
     title: "Erosão Costeira 7",
     description: "Região de Icapuí - Área 44",
