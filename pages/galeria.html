@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - ICAPUI-E-A-EROSAO-COSTEIRA</title>
+    <link rel="stylesheet" href="../css/galeria.css">
+</head>
+<body>
+    <header>
+        <h1>ICAPUI E A EROSAO COSTEIRA</h1>
+        <p class="subtitle">Galeria de Imagens e Vídeos</p>
+    </header>
+    
+    <div class="container">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="image">Imagens</button>
+            <button class="filter-btn" data-filter="video">Vídeos</button>
+        </div>
+        
+        <div class="gallery-grid" id="gallery">
+            <!-- Itens da galeria serão inseridos via JavaScript -->
+        </div>
+    </div>
+    
+    <div class="modal" id="modal">
+        <div class="modal-close" id="modal-close">×</div>
+        <div class="modal-nav">
+            <div class="nav-btn" id="prev-btn">❮</div>
+            <div class="nav-btn" id="next-btn">❯</div>
+        </div>
+        <div class="modal-content" id="modal-content">
+            <!-- Conteúdo do modal será inserido via JavaScript -->
+        </div>
+        <div class="modal-caption" id="modal-caption"></div>
+    </div>
+    
+    <footer>
+        <p>Projeto ICAPUI-E-A-EROSAO-COSTEIRA &copy; 2025</p>
+    </footer>
+    <script src="../js/galeria.js"></script>
+</body>
+</html> 

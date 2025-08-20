@@ -10,7 +10,7 @@ header {
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 1.4rem;
 }
 
 .header-scrolled {
@@ -37,7 +37,7 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: .4rem;
   margin: 0;
   padding: 0;
 }
@@ -53,7 +53,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .nav-links a i {
@@ -90,7 +90,7 @@ nav {
   display: none; /* escondido por padrão */
   position: absolute;
   top: 50%;
-  right: -20px;
+  right: -10px;
   transform: translateY(-50%);
   background: none;
   border: none;
@@ -199,6 +199,8 @@ nav {
   .nav-links.active li:nth-child(5) { transition-delay: 0.3s; }
   .nav-links.active li:nth-child(6) { transition-delay: 0.35s; }
   .nav-links.active li:nth-child(7) { transition-delay: 0.4s; }
+  .nav-links.active li:nth-child(8) { transition-delay: 0.45ws; }
+  .nav-links.active li:nth-child(9) { transition-delay: 0.5s; }
 }
 
 /* ===========================
@@ -206,7 +208,7 @@ nav {
    =========================== */
 @media (min-width: 1021px) and (max-width: 1200px) {
   .nav-links {
-    gap: 1rem;
+    gap: 0rem;
   }
 
   .nav-links a {
