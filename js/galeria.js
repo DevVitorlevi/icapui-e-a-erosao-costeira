@@ -365,20 +365,16 @@ const images = [
 
 // Dados da galeria - vídeos
 const videos = [
-  {
-    id: "video095",
-    title: "Vídeo Erosão 1",
-    description: "Região de Icapuí - Vídeo 1",
-  },
+
   {
     id: "video096",
     title: "Vídeo Erosão 3",
-    description: "Região de Icapuí - Vídeo 3",
+    description: "Região de Icapuí - Praia da Redonda",
   },
   {
     id: "video097",
     title: "Vídeo Erosão 4",
-    description: "Região de Icapuí - Vídeo 4",
+    description: "Região de Icapuí - Praia da Redonda",
   },
 ];
 
