@@ -31,11 +31,6 @@ const images = [
     description: "Região de Icapuí - Área 6",
   },
   {
-    id: "image007",
-    title: "Erosão Costeira 1",
-    description: "Região de Icapuí - Área 7",
-  },
-  {
     id: "image008",
     title: "Erosão Costeira 1",
     description: "Região de Icapuí - Área 8",
@@ -401,17 +396,17 @@ const images = [
 // Dados da galeria - vídeos
 const videos = [
   {
-    id: "video001",
+    id: "video095",
     title: "Vídeo Erosão 1",
     description: "Região de Icapuí - Vídeo 1",
   },
   {
-    id: "video003",
+    id: "video096",
     title: "Vídeo Erosão 3",
     description: "Região de Icapuí - Vídeo 3",
   },
   {
-    id: "video004",
+    id: "video097",
     title: "Vídeo Erosão 4",
     description: "Região de Icapuí - Vídeo 4",
   },
