@@ -359,7 +359,7 @@ const images = [
   {
     id: "image094",
     title: "Erosão Costeira",
-    description: "Região de Icapuí - Praia de Redonda",
+    description: "Região de Icapuí - Praia de Barrinha",
   },
 ];
 
